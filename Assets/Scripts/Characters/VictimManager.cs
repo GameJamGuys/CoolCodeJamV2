@@ -18,6 +18,7 @@ namespace Characters
             {
                 _victimImages[i].SetSprite(characters[i].SpriteRandomizer.Sprite);
             }
+            EndGameScreen.Instance.OnGameLoaded();
         }
 
         public static void OnKilled(Character character)

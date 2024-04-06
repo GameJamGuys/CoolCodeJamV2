@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using Server;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Characters
 {
@@ -22,9 +24,13 @@ namespace Characters
         private async UniTaskVoid GenerateCharacters()
         {
             var tasks = new List<UniTask>(_characters.Length);
+            var playersCreated = 0;
             foreach (var character in _characters)
             {
-                tasks.Add(character.SpriteRandomizer.LoadAvatarAsync(character.GetHashCode().ToString()));
+                tasks.Add(character.SpriteRandomizer.LoadAvatarAsync(character.GetHashCode() + DateTime.Now.ToString()));
+                playersCreated++;
+                if (playersCreated%10==0)
+                    await UniTask.Delay(TimeSpan.FromSeconds(1f));
             }
             await UniTask.WhenAll(tasks);
             

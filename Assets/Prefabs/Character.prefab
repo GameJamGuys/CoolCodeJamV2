@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 480502522106616647}
   - component: {fileID: 4926731176214876278}
   - component: {fileID: 3629947165746513537}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character
   m_TagString: Mob
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 3990230232400391517}
   - component: {fileID: 1519501403073137932}
   - component: {fileID: 8965329525003367465}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Skull
   m_TagString: Untagged
   m_Icon: {fileID: 0}

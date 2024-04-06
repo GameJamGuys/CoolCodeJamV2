@@ -33,7 +33,7 @@ public class CowController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (isRun) return;
-        if (collision.collider.CompareTag("Player") || collision.collider.CompareTag("Box"))
+        if (collision.collider.CompareTag("Player") )//|| collision.collider.CompareTag("Box"))
         {
             Vector2 collDir = collision.relativeVelocity;
             runDir = new Vector2(

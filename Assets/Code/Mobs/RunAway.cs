@@ -5,12 +5,13 @@ using UnityEngine;
 public class RunAway : MonoBehaviour
 {
     [SerializeField] CowController control;
+    [SerializeField] GetKilled killed;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !killed.isDead)
         {
-            print("Run!");
+            //print("Run!");
             RunFrom(collision.transform);
         }
     }

@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TopDownTest.unity
+    guid: 5cf01cbc57545465fbe8d3a24ea71656
   m_configObjects: {}

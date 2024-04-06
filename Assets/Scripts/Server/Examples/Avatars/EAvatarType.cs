@@ -1,0 +1,33 @@
+namespace Server.Examples
+{
+    public enum EAvatarType
+    {
+        Adventurer,
+        Adventurer_Neutral,
+        Avataaars,
+        Avataaars_Neutral,
+        Big_Ears,
+        Big_Ears_Neutral,
+        Big_Smile,
+        Bottts,
+        Bottts_Neutral,
+        Croodles,
+        Croodles_Neutral,
+        Fun_Emoji,
+        Icons,
+        Identicon,
+        Lorelei,
+        Lorelei_Neutral,
+        Micah,
+        Miniavs,
+        Notionists,
+        Notionists_Neutral,
+        Open_Peeps,
+        Personas,
+        Pixel_Art,
+        Pixel_Art_Neutral,
+        Rings,
+        Shapes,
+        Thumbs
+    }
+}

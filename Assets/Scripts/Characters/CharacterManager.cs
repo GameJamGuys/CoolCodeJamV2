@@ -10,8 +10,6 @@ namespace Characters
     public sealed class CharacterManager : MonoBehaviour
     {
         [SerializeField] private Character[] _characters;
-        private VictimManager _victimManager = new();
-
         private List<Character> Victims { get; } = new(VICTIMS_COUNT);
 
         private const int VICTIMS_COUNT = 3;
@@ -50,7 +48,7 @@ namespace Characters
                 
                 Victims.Add(victim);
             }
-            _victimManager.Init(Victims);
+            VictimManager.Init(Victims);
         }
     }
 }

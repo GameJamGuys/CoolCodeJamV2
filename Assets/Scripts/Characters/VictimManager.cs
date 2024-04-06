@@ -1,30 +1,24 @@
 using System.Collections.Generic;
+using System.Linq;
 using Server;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Characters
 {
-    public sealed class VictimManager
+    public static class VictimManager
     {
-        private Image _victimImage;
-        private List<Character> _victimsList;
-        private Character _currentVictim;
+        private static Image[] _victimImages;
+        private static List<Character> _victimsList;
         
-        public void Init(List<Character> characters)
+        public static void Init(List<Character> characters)
         {
             _victimsList = characters;
-            _victimImage = Object.FindObjectOfType<VictimImage>().GetComponent<Image>();
-            SelectNextVictim();
-        }
-
-        private void SelectNextVictim()
-        {
-            if (_victimsList.Count <= 0)
-                return;
-            
-            _currentVictim = _victimsList[0];
-            _victimImage.sprite = _currentVictim.SpriteRandomizer.Sprite;
+            _victimImages = Object.FindObjectsOfType<VictimImage>().Select(x => x.GetComponent<Image>()).ToArray();
+            for (var i = 0; i < characters.Count; i++)
+            {
+                _victimImages[i].sprite = characters[i].SpriteRandomizer.Sprite;
+            }
         }
     }
 }

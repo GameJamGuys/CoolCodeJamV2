@@ -14,7 +14,7 @@ namespace Characters
         {
             var style = new RandomAvatarStyle().SetSize(96);
             _randomAvatarServerHandler.SetStyle(style);
-            var texture = await _randomAvatarServerHandler.GetAvatar(EAvatarType.Adventurer, seed);
+            var texture = await _randomAvatarServerHandler.GetAvatar(EAvatarType.Big_Smile, seed);
             var sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f), 70f);
             _spriteRenderer.sprite = sprite;
         }

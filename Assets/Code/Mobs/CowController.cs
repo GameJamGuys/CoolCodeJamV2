@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class CowController : MonoBehaviour
 {
-    [Range(0, 3)]
+    [Range(0, 10)]
     [SerializeField] float speed = 0;
+
+    [Range(0, 3)]
+    [SerializeField] float minDelay = 0.7f;
+
+    [Range(3, 10)]
+    [SerializeField] float maxDelay = 5f;
 
     //Animator anim;
     SpriteRenderer sprite;
@@ -45,7 +51,7 @@ public class CowController : MonoBehaviour
 
     async void WalkAround()
     {
-        await Timer.Wait(Random.Range(0.7f, 5f));
+        await Timer.Wait(Random.Range(minDelay, maxDelay));
         if (!body) return;
 
         Vector2 walkDir = new Vector2(

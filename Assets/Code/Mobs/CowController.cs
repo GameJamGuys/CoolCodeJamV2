@@ -44,7 +44,7 @@ public class CowController : MonoBehaviour
             body.velocity = (collDir + runDir) * shiftspeed;
 
             isRun = true;
-            SayMoo();
+            //SayMoo();
         }
         
     }

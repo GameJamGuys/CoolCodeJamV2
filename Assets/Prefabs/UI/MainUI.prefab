@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7249811560477422421}
   - component: {fileID: 1704011003460273321}
   - component: {fileID: 4183527190259552159}
+  - component: {fileID: 8865621590495160443}
   m_Layer: 5
   m_Name: MainUI
   m_TagString: Untagged
@@ -56,7 +57,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -102,6 +103,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &8865621590495160443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54962308563531483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c7a469e37534e71b089ea6f52c3379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disableThings: []
+  winScreen: {fileID: 0}
+  loseScreen: {fileID: 0}
 --- !u!1 &368763484149397891
 GameObject:
   m_ObjectHideFlags: 0

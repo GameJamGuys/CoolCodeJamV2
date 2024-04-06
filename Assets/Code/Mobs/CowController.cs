@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class CowController : MonoBehaviour
 {
+    [SerializeField] float runSpeed = 20;
+
     [Range(0, 10)]
-    [SerializeField] float speed = 0;
+    [SerializeField] float walkSpeed = 2;
 
     [Range(0, 3)]
     [SerializeField] float minDelay = 0.7f;
@@ -40,8 +42,8 @@ public class CowController : MonoBehaviour
                 Random.Range(-0.5f, 0.5f),
                 Random.Range(-0.5f, 0.5f)).normalized;
 
-            float shiftspeed = speed + Random.Range(-0.1f, 0.1f);
-            body.velocity = (collDir + runDir) * shiftspeed;
+            float shiftspeed = runSpeed + Random.Range(-0.1f, 0.1f);
+            MoveBody((collDir + runDir) * shiftspeed);
 
             isRun = true;
             //SayMoo();
@@ -60,11 +62,18 @@ public class CowController : MonoBehaviour
 
         float shiftspeed = Random.Range(0.8f, 1f);
 
-        body.velocity = walkDir * shiftspeed;
+        MoveBody(walkDir* shiftspeed * walkSpeed);
         //print("Cow walk");
         //SayMoo();
 
         WalkAround();
+    }
+
+    public void RunBoyy(Vector2 dir) => MoveBody(dir * runSpeed);
+
+    public void MoveBody(Vector2 velocity)
+    {
+        body.velocity = velocity;
     }
 
     void SayMoo()
@@ -84,7 +93,7 @@ public class CowController : MonoBehaviour
         {
             isRun = false;
             //anim.SetBool("Run", false);
-            body.velocity = Vector2.zero;
+            MoveBody(Vector2.zero);
         }
     }
 

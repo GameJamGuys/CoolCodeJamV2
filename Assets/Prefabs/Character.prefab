@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94401b921a9d34348bca371408877bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 2
+  runSpeed: 20
   walkSpeed: 1.77
   minDelay: 2
   maxDelay: 6

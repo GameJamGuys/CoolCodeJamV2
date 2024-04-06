@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowCamera : MonoBehaviour
 {
-    [SerializeField] float interpolationFactor = 0.0f;
+    [SerializeField] float interpolationFactor = 1.0f;
     [SerializeField] float zDistance = 10.0f;
     public GameObject target;
 

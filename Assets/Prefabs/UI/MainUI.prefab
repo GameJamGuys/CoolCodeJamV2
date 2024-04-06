@@ -609,15 +609,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: NIGHT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b866ab39ce410a246a0c71cf82b3e253, type: 2}
+  m_sharedMaterial: {fileID: -1668544226582270975, guid: b866ab39ce410a246a0c71cf82b3e253,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280290055
+  m_fontColor: {r: 0.027960112, g: 0.044802554, b: 0.12452829, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -895,15 +896,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'DAY '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b866ab39ce410a246a0c71cf82b3e253, type: 2}
+  m_sharedMaterial: {fileID: -1668544226582270975, guid: b866ab39ce410a246a0c71cf82b3e253,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4292068216
+  m_fontColor: {r: 0.47245988, g: 0.76532567, b: 0.82641506, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2487,6 +2489,21 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 2100000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    - target: {fileID: 9022370456775851217, guid: 26a86b7a1473a4df4865506f8fc95174,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 0.30098248
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022370456775851217, guid: 26a86b7a1473a4df4865506f8fc95174,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 0.34929436
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022370456775851217, guid: 26a86b7a1473a4df4865506f8fc95174,
+        type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 0.3735848
+      objectReference: {fileID: 0}
     - target: {fileID: 9022370456775851217, guid: 26a86b7a1473a4df4865506f8fc95174,
         type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size

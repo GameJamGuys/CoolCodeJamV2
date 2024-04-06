@@ -176,6 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d4374f19444208b343135349c0f17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDead: 0
   skull: {fileID: 8959902337133148805}
   moveControl: {fileID: 984480881138020345}
 --- !u!58 &4926731176214876278
@@ -247,6 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control: {fileID: 984480881138020345}
+  killed: {fileID: 480502522106616647}
 --- !u!1 &809851315728404613
 GameObject:
   m_ObjectHideFlags: 0

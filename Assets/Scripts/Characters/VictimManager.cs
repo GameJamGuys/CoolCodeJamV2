@@ -1,8 +1,5 @@
 using System.Collections.Generic;
-using System.Linq;
-using Server;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Characters
 {
@@ -10,6 +7,8 @@ namespace Characters
     {
         private static VictimImage[] _victimImages;
         private static List<Character> _victimsList;
+
+        private static int _victimsMurdered = 0;
         
         public static void Init(List<Character> characters)
         {
@@ -26,10 +25,13 @@ namespace Characters
             if (_victimsList.Contains(character))
             {
                 _victimImages[_victimsList.IndexOf(character)].SetDeadImage();
+                _victimsMurdered++;
+                if (_victimsMurdered == _victimsList.Count)
+                    EndGameScreen.Instance.EndGame(true);
             }
             else
             {
-                Debug.Log("LOSE");
+                EndGameScreen.Instance.EndGame(false);
             }
         }
     }

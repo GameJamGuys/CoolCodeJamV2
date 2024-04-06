@@ -14,6 +14,8 @@ public class PlayerSwitcher : MonoBehaviour
     [SerializeField] Color blackBody;
     [SerializeField] Color whiteBody;
 
+    public void SetMode(bool mode) => SwitchMode(mode);
+
     public void SwitchMode() => SwitchMode(!darkMode);
 
     public void SwitchMode(bool isDark)

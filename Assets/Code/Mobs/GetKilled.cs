@@ -18,6 +18,7 @@ public class GetKilled : MonoBehaviour
     {
         anim.SetTrigger("dead");
         skull.SetActive(true);
+        moveControl.MoveBody(Vector2.zero);
         moveControl.enabled = false;
         
         this.enabled = false;

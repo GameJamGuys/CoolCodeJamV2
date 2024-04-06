@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Characters;
 using UnityEngine;
 
 public class GetKilled : MonoBehaviour
@@ -19,6 +20,7 @@ public class GetKilled : MonoBehaviour
         anim.SetTrigger("dead");
         skull.SetActive(true);
         moveControl.enabled = false;
+        VictimManager.OnKilled(GetComponent<Character>());
         
         this.enabled = false;
     }

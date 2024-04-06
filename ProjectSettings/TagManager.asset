@@ -12,9 +12,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - PlayerCollider
+  - Character
+  - PlayerTrigger
   - 
   - 
   - 
